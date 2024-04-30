@@ -7,6 +7,8 @@ regresar la frase sin esa palabra.
 3. Se requiere eliminar todas las palabras cortas de la frase, considerando que una palabra 
 cortas es aquella que tuebe 3 caracteres o menos, y debemos obtener la frase sin 
 esas palabras. 
+4. Obtener la frase de forma inversa, es decir, la ultima palabra de la frase debe ser la
+primera y asi sucesivamente.
 */
 
 const frase = ['Que', 'onda','con', 'el', 'amigo', 'como', 'es'];
@@ -73,3 +75,16 @@ for(let i =frase.length -1; i>=0; i--){
 }
 
 console.log(frase);
+console.log('--------------------------')
+
+
+/* 
+Ejercicio 4
+Necesitamos obtener la frase de forma inversa, es decir, la ultima palabra de la frase debe
+ser la primera y asi sucesivamente.
+*/
+
+const reverseWords = (array) => array.reverse();
+
+const reverseWordsTest = reverseWords(frase);
+console.log(reverseWordsTest);
