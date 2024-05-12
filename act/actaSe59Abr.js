@@ -28,7 +28,7 @@ const countLetters = (array, position) => {
     return frase[position].length;
 }
 
-const letras = countLetters(frase, 10);
+const letras = countLetters(frase, 5);
 console.log(letras);
 console.log('--------------------------')
 
@@ -68,14 +68,17 @@ const deleteShortWordsTest = deleteShortWords(frase);
 console.log(deleteShortWordsTest);
 console.log('--------------------------')
 
-for(let i =frase.length -1; i>=0; i--){
-    if (frase[i].length <= 3){
-        frase.splice(i,1);
+/* const deleteShortWords = (array) => {
+    for(let i = array.length -1; i>=0; i--){
+        if (array[i].length <= 3){
+            return array.filter(word => word.length > 3);
+        }
     }
 }
 
-console.log(frase);
-console.log('--------------------------')
+const deleteShortWordsTest = deleteShortWords(frase);
+console.log(deleteShortWordsTest);
+console.log('--------------------------') */
 
 
 /* 
@@ -88,3 +91,7 @@ const reverseWords = (array) => array.reverse();
 
 const reverseWordsTest = reverseWords(frase);
 console.log(reverseWordsTest);
+
+console.log('--------------------------')
+
+console.log(frase.reverse());
