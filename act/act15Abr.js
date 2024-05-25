@@ -72,6 +72,15 @@ const canes = [
     }
 
 console.log(edades(canes));
+
+
+const getAverageAge = (dogs) => {
+  let totalAge = dogs.reduce((acc, dog) => acc + dog.edad, 0);
+  let ageAvarege = totalAge / dogs.length;
+  return ageAvarege;
+};
+console.log(getAverageAge(canes));
+
 console.log("----------------------------------------------------");
 
 /* 2.- Necesito obtener una lista de perros basados en el país al que pertenecen por lo que tenemos que con reduce obtendremos
